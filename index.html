@@ -3,25 +3,47 @@
 <head>
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link rel="icon" type="image/png" href="img/favicon.png"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 	<link rel="stylesheet" type="text/css" href="facha.css">
-	<title></title>
+	<title>Nintendo Switch</title>
 </head>
 <body>
 	<header>
 		<div class="head">
-			<div class="logo">
-				<img src="img/logo.png"/>
+			<div class="navi">
+				<ul>
+					<li class="logo"><img src="img/logo.png"></li>
+					<li><a class="normal" href='#'>CONSOLA</a></li>
+					<li class="dropdown">
+						<a href="#">MODELOS</a>
+						<div class="dropdown-content">
+							<a href="#">ORIGINAL</a>
+							<a href="#">AZUL</a>
+							<a href="#">BLANCA</a>
+							<a href="#">MARINA</a>
+							<a href="#">LIMA</a>
+							<a href="#">NARANJA</a>
+							<a href="#">SALMÓN</a>
+							<a href="#">VIOLETA</a>
+						</div>
+					</li>
+					<li><a class="normal" href='#'>VENTAJAS</a></li>
+				</ul>
 			</div>
-			<nav>
-				<ul class="opciones">
-				</ul>
-				<ul class="sociales">
-					
-				</ul>
-				<div class="busqueda">
-					
+			<div class="navd">
+				<div class="search">
+					<form>
+  						<input type="text" name="search" placeholder="Search..">
+					</form>
 				</div>
-			</nav>
+				<div class="redes">
+					<a class="soc" href="#"><img src="img/face.png"></a>
+					<a class="soc" href="#"><img src="img/twitter.png"></a>
+					<a class="soc" href="#"><img src="img/instagram.png"></a>
+				</div>
+			</div>
 		</div>	
 	</header>
 	<main>
@@ -35,24 +57,40 @@
 				</div>
 				<div class="perks">
 					<div class="perk-left">
-						<img src="img/perk2.png">
-						<h1>Jugá en casa</h1>
-						<p>Instalada en su base, Switch puede jugarse en tu tv</p>
+						<div class="perk-left-img-con">
+							<img src="img/perk2.png">
+						</div>
+						<div class="perk-left-text-con">
+							<h1>Jugá en casa</h1>
+							<p>Instalada en su base, Switch puede jugarse en tu tv</p>
+						</div>
 					</div>
 					<div class="perk-right">
-						<img src="img/perk3.png">
-						<h1>Llevala a donde quieras</h1>
-						<p>Conectando los joy-con, podés llevarla con vos</p>
+						<div class="perk-right-img-con">
+							<img src="img/perk3.png">
+						</div>
+						<div class="perk-right-text-con">
+							<h1>Llevala a donde quieras</h1>
+							<p>Conectando los joy-con, podés llevarla con vos</p>
+						</div>
 					</div>
 					<div class="perk-left">
-						<img src="img/perk4.png">
-						<h1>Sí, a donde quieras</h1>
-						<p>¿Querés llevarla en tu vehículo? Es posible</p>
+						<div class="perk-left-img-con">
+							<img src="img/perk4.png">
+						</div>
+						<div class="perk-left-text-con">
+							<h1>Sí, a donde quieras</h1>
+							<p>¿Querés llevarla en tu vehículo? Es posible</p>
+						</div>
 					</div>
 					<div class="perk-right">
-						<img src="img/perk1.png">
-						<h1>SÍ, A DONDE QUIERAS</h1>
-						<p>Animate a volar con tu Nintendo Switch</p>
+						<div class="perk-right-img-con">
+							<img src="img/perk1.png">
+						</div>
+						<div class="perk-right-text-con">
+							<h1>SÍ, A DONDE QUIERAS</h1>
+							<p>Animate a volar con tu Nintendo Switch</p>
+						</div>
 					</div>
 				</div>		
 				<div class="tresd">
@@ -60,58 +98,40 @@
 					<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/c2d8eef2b22841abacb0209465bfee0f/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
 					</div>
 				</div>
-				<div class="original">
-				</div>
-				<!--<div class="modelos">
-					<h1>O probá algunos de los modelos exclusivos</h1>
-					<ul class="lista">
-						<li>
-							<div class="cajamodelo">
-								<p>Azul</p>
-								<img src="img/azul.jpg"/>
+				<div class="modelos">
+					<h1>Elegí uno de los modelos que tenemos</h1>
+					<div class="selector">
+						<div class="color-container">
+							<div class="button original selected" data-color='black'>
 							</div>
-						</li>
-						<li>
-							<div class="cajamodelo">
-								<p>Blanca</p>
-								<img src="img/blanca.jpg"/>
+              				<div class="button azul" data-color='blue'>
+							</div> 
+							<div class="button blanca" data-color='white'>
 							</div>
-						</li>
-						<li>
-							<div class="cajamodelo">
-								<p>Celeste</p>
-								<img src="img/celeste.jpg"/>
+							<div class="button marina" data-color='ocean'>
 							</div>
-						</li>
-						<li>
-							<div class="cajamodelo">
-								<p>Lima</p>
-								<img src="img/lima.jpg"/>
+							<div class="button lima" data-color='lime'>
 							</div>
-						</li>
-						<li>
-							<div class="cajamodelo">
-								<p>Salmón</p>
-								<img src="img/salmon.jpg"/>
+							<div class="button naranja" data-color='orange'>
 							</div>
-						</li>
-						<li>
-							<div class="cajamodelo">
-								<p>Naranja</p>
-								<img src="img/naranja.jpg"/>
+							<div class="button salmon" data-color='salmon'>
 							</div>
-						</li>
-						<li>
-							<div class="cajamodelo">
-								<p>Violeta</p>
-								<img src="img/violeta.jpg"/>
+							<div class="button violeta" data-color='violet'>
 							</div>
-						</li>
-					</ul>	
-				</div>-->
-				<div class="especiales">
-				</div>
-				<div class="formularios">
+						</div>
+						<div class="version">
+							<div class="version-container">
+								<img class="img selected" data-color='black' src="img/original.jpg">
+								<img class='img' data-color='blue' src="img/azul.jpg">
+								<img class='img' data-color='white' src="img/blanca.jpg">
+								<img class='img' data-color='ocean' src="img/celeste.jpg">
+								<img class='img' data-color='lime' src="img/lima.jpg">
+								<img class='img' data-color='orange' src="img/naranja.jpg">
+								<img class='img' data-color='salmon' src="img/salmon.jpg">
+								<img class='img' data-color='violet' src="img/violeta.jpg">							
+							</div>
+						</div>
+					</div>			
 				</div>
 			</div>	
 	</main>
@@ -121,24 +141,18 @@
 				<div class="logopie">
 					<img src="img/logopie.png">
 				</div>
-				<div class="listapiea">
+				<div class="listapie">
 					<ul>
-						<li>
-						</li>
-						<li>
-						</li>
-						<li>
-						</li>
+						<li>CONSOLA</li>
+						<li>MODELOS</li>
+						<li>VENTAJAS</li>
 					</ul>
 				</div>
-				<div class="listapieb">
+				<div class="listapie">
 					<ul>
-						<li>
-						</li>
-						<li>
-						</li>
-						<li>
-						</li>
+						<li>COMPRAR</li>
+						<li>JUEGOS</li>
+						<li>CONTACTO</li>
 					</ul>
 				</div>
 				<div class="sociales">
@@ -148,10 +162,11 @@
 			</div>
 			<div class="footerdown">
 				<div class="legales">
+					<img src="">
+					<p>COPYRIGHT NINTENDO SWITCH ARGENTINA-2016. <br>TODOS LOS DERECHOS RESERVADOS</p>
 				</div>
 				<div class="powered">
-				</div>
-				<div class="chivo">
+					<p>POWERED BY JONATAN LIPNER | DISEÑO Y DESARROLLO <img src=""></p>
 				</div>
 			</div>
 		</div>			
